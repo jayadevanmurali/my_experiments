@@ -28,11 +28,15 @@ The target platform for this application is Linux and Windows.
 
 ## How to build:
 
-Step 1. Go to project home directory by executing following command- 
+Step 1. Clone project from github.(url -https://github.com/jayadevanmurali/my_experiments.git)
 
-	cd path_to_project_home
+	git clone https://github.com/jayadevanmurali/my_experiments.git
 
-Step 2. Execute the following command - 
+Step 2. Go to project home directory by executing following command- 
+
+	cd my_experiments/weather_data_generator/
+
+Step 3. Execute the following command - 
 
 	mvn clean package
 
@@ -49,7 +53,7 @@ This command will generate weatherdatagenerator-0.0.1.tar.gz file which contains
 
 ## How to run the application:
 
-Step 1. Copy the weatherdatagenerator-0.0.1.tar.gz from build area to required server.
+Step 1. Copy the weatherdatagenerator-0.0.1.tar.gz from target directory to required server.
 
 Step 2.Un-zip the weatherdatagenerator-0.0.1.tar.gz file generated in maven build. Example
 
