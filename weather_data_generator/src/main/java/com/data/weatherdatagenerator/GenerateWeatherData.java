@@ -162,7 +162,7 @@ public class GenerateWeatherData {
 	 * @param randomValue
 	 * @return
 	 */
-	private static String getCondition(Float temperature,Properties prop) {
+	public static String getCondition(Float temperature,Properties prop) {
 
 		if (temperature > Integer.parseInt(prop.getProperty(Constants.WEATHER_SNOW_MIN_TEMP))
 				&& temperature <= Integer.parseInt(prop.getProperty(Constants.WEATHER_SNOW_MAX_TEMP)))
@@ -184,7 +184,7 @@ public class GenerateWeatherData {
 	 * @param max
 	 * @return
 	 */
-	private static Float getTemperature(String min, String max,int timeFactor) {
+	public static Float getTemperature(String min, String max,int timeFactor) {
 
 		Random generator = new Random();
 		Float tmpMax = new Float(max);
@@ -198,7 +198,7 @@ public class GenerateWeatherData {
 	 * @param max
 	 * @return
 	 */
-	private static Float getPressure(Float temp, String min, String max) {
+	public static Float getPressure(Float temp, String min, String max) {
 		
 		return (Float.parseFloat(max)-Float.parseFloat(min))/temp+Float.parseFloat(min);
 	}
@@ -209,7 +209,7 @@ public class GenerateWeatherData {
 	 * @param max
 	 * @return
 	 */
-	private static Float getHumidity(Float temp, String min, String max) {
+	public static Float getHumidity(Float temp, String min, String max) {
 		
 		return (Float.parseFloat(max)+Float.parseFloat(min)/2)/temp +Float.parseFloat(min);
 	}
